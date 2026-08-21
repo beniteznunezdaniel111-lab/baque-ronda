@@ -317,6 +317,9 @@ section.block{padding:72px 0}
 .zona-fb li{font-size:12.5px;border:1px solid var(--line-2);border-radius:999px;padding:6px 12px;color:var(--text);background:var(--bg-2)}
 /* Leaflet en oscuro */
 .leaflet-container{background:#0B1512!important;font-family:inherit!important}
+/* los tiles vienen en claro: se oscurecen para que el mapa no cante
+   sobre el resto de la web, que es negra */
+.leaflet-tile-pane{filter:brightness(.62) saturate(.72) contrast(1.06)}
 /* el control de zoom se baja para no caer sobre la chapa de Ronda */
 .leaflet-top.leaflet-left .leaflet-control-zoom{margin-top:58px!important}
 .leaflet-control-zoom a{background:rgba(10,10,11,.86)!important;color:var(--text)!important;border-color:rgba(255,255,255,.16)!important}
